@@ -30,7 +30,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor("Red")
-      .setAuthor({ name: member.user.tag, iconURL: member.user.displayAvatarURL() })
+      .setAuthor({ name: member.user.username, iconURL: member.user.displayAvatarURL() })
       .setThumbnail(member.user.displayAvatarURL())
       .addFields(
         { name: "<:people:1192892928700448838>・**Identifiant :**", value: `\`${member.user.id}\``, inline: true },
